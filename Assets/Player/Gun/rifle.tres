@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=4 format=3 uid="uid://bsb0no7ruw8ol"]
+
+[ext_resource type="AudioStream" uid="uid://nsium3h2sdlh" path="res://Assets/Sounds/rifle_reload.ogg" id="1_j40a6"]
+[ext_resource type="Script" path="res://Assets/Player/Gun/weapon_resource.gd" id="1_nl1jt"]
+[ext_resource type="AudioStream" uid="uid://c1774c7joauxs" path="res://Assets/Sounds/rifle_shoot_bb.ogg" id="3_lk42j"]
+
+[resource]
+script = ExtResource("1_nl1jt")
+weapon_name = "Rifle"
+activate_anim = "rifle_activate"
+deactivate_anim = "rifle_deactivate"
+shoot_anim = "rifle_shoot"
+reload_anim = "rifle_reload"
+current_condition = 100.0
+max_condition = 100.0
+con_loss_min = 0.1
+con_loss_max = 2.0
+auto_fire = true
+shoot_sound = ExtResource("3_lk42j")
+reload_sound = ExtResource("1_j40a6")
+type = 1
+weapon_range = 2000
+damage = 5

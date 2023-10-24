@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbpd6v05502iy"]
+
+[ext_resource type="PackedScene" uid="uid://bnnhefbsq4bwe" path="res://Assets/Levels/Decoration/GLB/Stalk.glb" id="1_xt105"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_00vx5"]
+radius = 1.05261
+height = 23.0159
+
+[node name="Stalk" instance=ExtResource("1_xt105")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stalk2" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stalk2/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11664, 12.5217, 0)
+shape = SubResource("CapsuleShape3D_00vx5")

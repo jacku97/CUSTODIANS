@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=4 format=3 uid="uid://bwtx8adwflsu5"]
+
+[ext_resource type="Script" path="res://Assets/Player/Gun/weapon_resource.gd" id="1_00l6r"]
+[ext_resource type="AudioStream" uid="uid://bph53h4m72po2" path="res://Assets/Sounds/pistol_reload.ogg" id="1_1r182"]
+[ext_resource type="AudioStream" uid="uid://ddla4me4tdqoj" path="res://Assets/Sounds/pistol.ogg" id="3_0ji4m"]
+
+[resource]
+script = ExtResource("1_00l6r")
+weapon_name = "Pistol"
+activate_anim = "pistol_activate"
+deactivate_anim = "pistol_deactivate"
+shoot_anim = "pistol_shoot"
+reload_anim = "pistol_reload"
+current_condition = 50.0
+max_condition = 100.0
+con_loss_min = 0.2
+con_loss_max = 0.5
+auto_fire = false
+shoot_sound = ExtResource("3_0ji4m")
+reload_sound = ExtResource("1_1r182")
+type = 2
+weapon_range = 0
+damage = 0

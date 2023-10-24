@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmqf0ys4ktfaw"]
+
+[ext_resource type="PackedScene" uid="uid://je6uncd631fp" path="res://Assets/Levels/Decoration/GLB/Mushroom.glb" id="1_fvsnx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yn6po"]
+size = Vector3(1.51059, 0.313861, 1.48769)
+
+[node name="Mushroom" instance=ExtResource("1_fvsnx")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mushroom2" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mushroom2/StaticBody3D" index="0"]
+transform = Transform3D(9.80333, 0, 0, 0, 9.80333, 0, 0, 0, 9.80333, -0.769713, -1.91695, 1.01438)
+shape = SubResource("BoxShape3D_yn6po")
