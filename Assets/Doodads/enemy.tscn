@@ -1320,9 +1320,10 @@ radius = 25.0641
 
 [node name="Enemy" type="CharacterBody3D" groups=["Enemy"]]
 collision_layer = 2
-collision_mask = 4
+collision_mask = 5
 script = ExtResource("1_ux1j7")
 health = 20
+speed = 6
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

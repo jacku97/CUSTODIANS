@@ -1,3 +1,6 @@
+NavigationRegion3D
+MeshInstance3D
+WorldEnvironment
 Label
 Marker3D
 GPUParticles3D
@@ -6,7 +9,6 @@ CollisionShape3D
 Area3D
 NavigationObstacle3D
 StaticBody3D
-MeshInstance3D
 AudioStreamPlayer
 ColorRect
 AudioStreamPlayer3D
@@ -16,9 +18,7 @@ RichTextLabel
 HBoxContainer
 AnimationPlayer
 Node
-NavigationRegion3D
 DirectionalLight3D
-WorldEnvironment
 NavigationAgent3D
 SpotLight3D
 OmniLight3D

@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 AudioManager="*res://Assets/Sounds/audio_manager.gd"
 
+[display]
+
+window/size/mode=2
+
 [input]
 
 forward={

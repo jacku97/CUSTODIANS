@@ -101,24 +101,3 @@ shape = SubResource("ConcavePolygonShape3D_nukqq")
 
 [node name="Enemy2" parent="." instance=ExtResource("4_66y0l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5431, 0, 28.1733)
-
-[node name="Enemy3" parent="." instance=ExtResource("4_66y0l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.5431, 0, 28.1733)
-
-[node name="Enemy4" parent="." instance=ExtResource("4_66y0l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.5431, 0, 28.1733)
-
-[node name="Enemy5" parent="." instance=ExtResource("4_66y0l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5431, 0, 28.1733)
-
-[node name="Enemy8" parent="." instance=ExtResource("4_66y0l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5431, 0, 30.8559)
-
-[node name="Enemy9" parent="." instance=ExtResource("4_66y0l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.5431, 0, 30.8559)
-
-[node name="Enemy10" parent="." instance=ExtResource("4_66y0l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.5431, 0, 30.8559)
-
-[node name="Enemy11" parent="." instance=ExtResource("4_66y0l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5431, 0, 30.8559)

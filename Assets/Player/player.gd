@@ -64,11 +64,10 @@ func _unhandled_input(event: InputEvent) -> void:
 		get_tree().quit()
 	states.input(event)
 	
-	if Input.is_action_just_pressed("camreset"):
-		camera.rotation.x = 0
+	
 	
 	if Input.is_action_just_pressed("quickturn"):
-		head.rotation.y -= deg_to_rad(180)
+		head.rotate_y(deg_to_rad(180))
 	
 	if Input.is_action_just_pressed("camfast"):
 		cam_speed = cam_fast
@@ -98,25 +97,31 @@ func _physics_process(delta):
 	states.physics_process(delta)
 	#KEYBOARD LOOK#
 	if Input.is_action_pressed("rleft") and locked == false:
-		head.rotation.y += cam_speed
+		head.rotate_y(cam_speed)
 		rotsfx.play()
 	if Input.is_action_pressed("rright")and locked == false:
-		head.rotation.y -= cam_speed
+		head.rotate_y(-cam_speed)
 		rotsfx.play()
 	if Input.is_action_pressed("rup") and locked == false:
-		camera.rotation.x += cam_speed
+		camera.rotate_x(cam_speed)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
 		rotsfx.play()
 	if Input.is_action_pressed("rdown")and locked == false:
-		camera.rotation.x -= cam_speed
+		camera.rotate_x(-cam_speed)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
 		rotsfx.play()
 
 	if locked == true:
 		if is_instance_valid(lock_target):
+			var head_target = Vector3(0,lock_target.lock_point.global_transform.origin.y, 0)
+			var cam_target = Vector3(lock_target.lock_point.global_transform.origin.x, 0 , 0)
 			head.look_at(lock_target.lock_point.global_transform.origin)
+			#camera.look_at(cam_target)
+			
+			
 		else:
 			locked = false
+	
 	#Head bob
 	t_bob += delta * velocity.length()* float(is_on_floor())
 	camera.transform.origin = _headbob(t_bob)

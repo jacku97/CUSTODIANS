@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bm5blihqcblr2"]
+[gd_scene load_steps=16 format=3 uid="uid://bm5blihqcblr2"]
 
 [ext_resource type="Texture2D" uid="uid://44jklgkxtj6s" path="res://Assets/Resources/Textures/BlueSkySkybox - Copy.png" id="2_d8jxm"]
 [ext_resource type="PackedScene" uid="uid://d15ghjshu02v7" path="res://Assets/Player/player.tscn" id="2_jd48x"]
@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://cpvquutui2voi" path="res://Assets/Levels/Decoration/pillar.tscn" id="9_6wbgv"]
 [ext_resource type="PackedScene" uid="uid://rlj2qq7kt2ku" path="res://Assets/Doodads/eyeball.tscn" id="10_ndgp3"]
 [ext_resource type="PackedScene" uid="uid://bbpfnli7yj6m0" path="res://Assets/Doodads/enemy.tscn" id="11_wsa3f"]
-[ext_resource type="PackedScene" uid="uid://bjr7jlvm78qlw" path="res://Assets/Doodads/mushroom_platform.tscn" id="12_eti7r"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_nb7wx"]
 panorama = ExtResource("2_d8jxm")
@@ -610,75 +609,6 @@ transform = Transform3D(1.93366e-07, 0, -9.64354, 0, 12.3706, 0, 9.64354, 0, 1.9
 [node name="Pillar12" parent="NavigationRegion3D" instance=ExtResource("9_6wbgv")]
 transform = Transform3D(1.93366e-07, 0, -9.64354, 0, 12.3706, 0, 9.64354, 0, 1.93366e-07, 1295.12, 1.27152, -133.913)
 
-[node name="mushroom_platform" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1026.36, -0.0516706, -7.64916)
-
-[node name="mushroom_platform2" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1026.36, 1.20527, 1.0202)
-
-[node name="mushroom_platform3" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1134.72, -0.367247, 1.0202)
-
-[node name="mushroom_platform11" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1208.81, 1.73947, -24.8555)
-
-[node name="mushroom_platform16" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1221.81, 1.68856, -8.85547)
-
-[node name="mushroom_platform17" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1252.12, 1.53983, 1.44277)
-
-[node name="mushroom_platform21" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1272.51, 1.37206, -26.8038)
-
-[node name="mushroom_platform22" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1257.51, 2.35728, -58.8038)
-
-[node name="mushroom_platform23" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1262.57, 2.2569, -36.9719)
-
-[node name="mushroom_platform12" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1201.81, -0.367247, 23.7091)
-
-[node name="mushroom_platform4" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1.43604, 0, 0, 0, 1.43604, 0, 0, 0, 1.43604, 1137.55, -0.367247, -7.74561)
-
-[node name="mushroom_platform10" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1.43604, 0, 0, 0, 1.43604, 0, 0, 0, 1.43604, 1200.72, -0.367247, -7.74561)
-
-[node name="mushroom_platform14" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1.43604, 0, 0, 0, 1.43604, 0, 0, 0, 1.43604, 1234.56, 2.02458, 12.9345)
-
-[node name="mushroom_platform15" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1.43604, 0, 0, 0, 1.43604, 0, 0, 0, 1.43604, 1236.11, -0.367244, -13.644)
-
-[node name="mushroom_platform18" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1.43604, 0, 0, 0, 1.43604, 0, 0, 0, 1.43604, 1253.1, -0.367244, -24.8004)
-
-[node name="mushroom_platform19" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1.43604, 0, 0, 0, 1.43604, 0, 0, 0, 1.43604, 1247.98, 1.22535, -44.8034)
-
-[node name="mushroom_platform5" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1.79575, 0, 0, 0, 1.79575, 0, 0, 0, 1.79575, 1150.57, -0.367246, -2.10939)
-
-[node name="mushroom_platform6" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1.79575, 0, 0, 0, 1.79575, 0, 0, 0, 1.79575, 1163.29, -0.367244, 10.0245)
-
-[node name="mushroom_platform7" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1.79575, 0, 0, 0, 1.79575, 0, 0, 0, 1.79575, 1173.14, -0.367244, -12.3497)
-
-[node name="mushroom_platform8" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1.79575, 0, 0, 0, 1.79575, 0, 0, 0, 1.79575, 1188.68, 2.49461, 5.38985)
-
-[node name="mushroom_platform9" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1.79575, 0, 0, 0, 1.79575, 0, 0, 0, 1.79575, 1217.93, 2.49461, 5.38985)
-
-[node name="mushroom_platform20" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1.79575, 0, 0, 0, 1.79575, 0, 0, 0, 1.79575, 1231.62, 2.49461, -60.4)
-
-[node name="mushroom_platform13" parent="." instance=ExtResource("12_eti7r")]
-transform = Transform3D(1.79575, 0, 0, 0, 1.79575, 0, 0, 0, 1.79575, 1232.93, 2.49461, 30.3899)
-
 [node name="Enemy" parent="." instance=ExtResource("11_wsa3f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1077.61, 0.116827, 9.92056)
 
@@ -690,3 +620,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1075.15, 0.116827, 7.04054)
 
 [node name="Enemy4" parent="." instance=ExtResource("11_wsa3f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1077.15, 0.116827, 8.04054)
+
+[node name="Enemy5" parent="." instance=ExtResource("11_wsa3f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1073.63, 0.116827, -13.807)
+
+[node name="Enemy6" parent="." instance=ExtResource("11_wsa3f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1074.63, 0.116827, -16.807)
+
+[node name="Enemy7" parent="." instance=ExtResource("11_wsa3f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1078.63, 0.116827, -14.807)
+
+[node name="Enemy8" parent="." instance=ExtResource("11_wsa3f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1078.08, 0.116827, -12.4615)

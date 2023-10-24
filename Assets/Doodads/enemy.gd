@@ -47,15 +47,16 @@ func _physics_process(delta):
 func hit(damage, source : Player, _direction := Vector3.ZERO, _position:= Vector3.ZERO):
 	if !player_found:
 		for ally in allies:
-			ally.alerted(source)
+			if is_instance_valid(ally):
+				ally.alerted(source)
 		
 	var hit_pos = _position - get_global_transform().origin
 	player = source
 	player_found = true
 	health -= damage
-	print_debug("Target hit")
+	#print_debug("Target hit")
 	if health <= 0:
-		print_debug("I died")
+		#print_debug("I died")
 		queue_free()
 		anim.play("death")
 		sfx_dead.pitch_scale = randf_range(0.8, 1.2)
@@ -76,8 +77,13 @@ func hit(damage, source : Player, _direction := Vector3.ZERO, _position:= Vector
 func _on_detection_body_entered(body):
 	
 	if body is Player:
+		if !player_found:
+			for ally in allies:
+				if is_instance_valid(ally):
+					ally.alerted(body)
 		player_found = true
 		player = body
+		
 
 
 func _on_jump_timer_timeout():
@@ -85,7 +91,7 @@ func _on_jump_timer_timeout():
 
 
 func _on_hbox_timer_timeout():
-	print_debug("hbox timer")
+	#print_debug("hbox timer")
 	can_attack = true
 
 
@@ -112,7 +118,7 @@ func alerted(target: Player):
 func _on_alert_body_entered(body):
 	if body is Enemy:
 		allies.append(body)
-		print_debug("Ally found")
+		#print_debug("Ally found")
 
 
 
